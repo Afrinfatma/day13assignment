@@ -7,11 +7,11 @@ public class uc1 {
 	public static void main(String[] args){
 		Scanner input= new Scanner(System.in);
 		System.out.println("Enter First Number");
-		int num1=input.nextInt();
+		float num1=input.nextFloat();
 		System.out.println("Enter Second Number");
-		int num2=input.nextInt();
+		float num2=input.nextFloat();
 		System.out.println("Enter Third Number");
-		int num3=input.nextInt();
+		float num3=input.nextFloat();
 		if( num1 > num2 && num1> num3) {
 		  System.out.println("The max3 of three number is num1:" +num1);
 			}
