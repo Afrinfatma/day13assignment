@@ -2,25 +2,26 @@ package com.day13;
 
 import java.util.Scanner;
 
-public class uc1 {
-    
-	public static void main(String[] args){
-		Scanner input= new Scanner(System.in);
-		System.out.println("Enter First Number");
-		float num1=input.nextFloat();
-		System.out.println("Enter Second Number");
-		float num2=input.nextFloat();
-		System.out.println("Enter Third Number");
-		float num3=input.nextFloat();
-		if( num1 > num2 && num1> num3) {
-		  System.out.println("The max3 of three number is num1:" +num1);
+public class uc1<Static> {
+   static String s1="Afrin";
+   static String s2="hi";
+   static String s3="bye";
+
+   private static void getMax() {
+			
+		if( s1.length ()> s2.length() && s1.length()> s3.length()) {
+		  System.out.println("The max3 of three string is s1:" +s1.length());
 			}
-		else if (num2 > num3) {
-			System.out.println("The max of three number is num2 :" +num2);
+		else if (s2.length() > s3.length()) {
+			System.out.println("The max of three string  is s2 :" +s2.length());
 		}
 		else {
-			System.out.println("The max of three number is num3:" +num3);
+			System.out.println("The max of three string is s3:" +s3.length());
 		}
-	
-	}
-}
+		}
+	    
+      public static void main(String[] args){  
+	    getMax();
+	    
+      }
+      }
